@@ -1,0 +1,155 @@
+.marketsContainer {
+  background-color: #3c08a4;
+  padding: 1rem;
+}
+.mcryptoWrapper {
+  background-color: #7357cf;
+  border-radius: 0 0 8px 8px;
+  overflow-x: scroll;
+  
+  // border-radius: 8px;
+  // margin: 1rem 0;
+  
+  // #7357cf
+
+  .mcryptoContents, .mcryptoTitle {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    // padding: 0.2rem;
+    width: 200%;
+  }
+
+  .mcryptoContents {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0.2rem 0.2rem 0.2rem 0;
+  }
+  .mcryptoTitle {
+    // padding: 0.5rem 0.2rem;
+    // background-color: #6e4cdb;
+    background-color: #6e4cdb;
+    // padding: 0.5rem;
+    width: 200%;
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+
+    .cryptoImageHeader {
+      position: sticky;
+      left: 0px;
+      z-index: 1;
+      background-color: #6e4cdb;
+      padding-left: 0.5rem;
+    }
+  }
+
+
+
+  .cryptoImageContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: sticky;
+    left: 0px;
+    z-index: 1;
+    background-color: #7357cf;
+    padding-left: 0.5rem;
+
+    img {
+      border-radius: 60%;
+    
+    }
+
+    span {
+      background-color: #6e4cdb;
+      padding: 2px;
+      border-radius: 4px;
+    }
+  }
+}
+
+// SearchBar Styling
+.SearchBar {
+  margin: 1rem 0;
+  padding: 0 1rem;
+
+  .searchBarContainer {
+    display: flex;
+    justify-content: center;
+
+     input {
+      outline: none;
+      padding: .8rem .5rem;
+      width: 100%;
+      border: none;
+      background-color: rgb(239, 239, 239);
+      border-radius: 8px 0 0 8px;
+      color: black;
+
+      &::placeholder {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-style: italic;
+      }
+    }
+
+    button {
+      padding: 0 8%;
+      border: none;
+      background-color: #3c08a4;
+      border-radius: 0 8px 8px 0;
+      font-size: 1rem;
+      // letter-spacing: 2px;
+    }
+  }
+}
+
+// Displayed Crypto
+// .mcryptoNoticeWrapper {
+//   input {
+//     padding: .2rem .3rem;
+//     border: none;
+//     outline: none;
+//   }
+//   input[type=text] {
+//     background-color: #6e4cdb;
+//     border: none;
+//   }
+//   .mcryptoNoticeSubmit {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: .5rem;
+
+//     input:nth-of-type(1) {
+//       background-color: red;
+//       cursor: pointer;
+//     }
+
+//     input:nth-of-type(2) {
+//       background-color: green;
+//       cursor: pointer;
+//     }
+//   }
+// }crypto-alert-a7a98
+
+.mcryptoNoticeWrapper {
+  display: flex;
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .3rem .4rem;
+  }
+  input[type="text"] {
+    background-color: #6e4cdb;
+  }
+
+  input:nth-of-type(1) {
+    background-color: red;
+    cursor: pointer;
+  }
+
+  input:nth-of-type(3) {
+    background-color: green;
+    cursor: pointer;
+  }
+}
